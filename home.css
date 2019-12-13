@@ -48,6 +48,13 @@ section{
 }
 
 @media only screen and (max-width: 800px) {
+	.showcase{
+        position: relative;
+        padding-top: 20%;
+        margin:0 0 0 0;
+        padding-bottom: 4%;
+     }
+	
     .showcase .video{
         width:40%;
         height:50%;
@@ -64,13 +71,6 @@ section{
 
 
 @media only screen and (max-width: 500px) {
-    
-    .showcase{
-        position: relative;
-        padding-top: 20%;
-        margin:0 0 0 0;
-        padding-bottom: 4%;
-     }
 
     
     .showcase .video{
