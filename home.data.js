@@ -119,15 +119,19 @@ var HomeData = {
     "platform": {
       "title": "我们专业的平台",
       "data": [{
+        "image": "online.jpg",
         "title": "无须繁琐的手续",
         "content": "在线, 自动, 随叫随到                 "
       }, {
+        "image": "translation.jpg",
         "title": "无须当心品质",
         "content": "我们带来西班牙酒厂的直销                           "
       }, {
+        "image": "intermediary.jpg",
         "title": "没有层层剥削",
         "content": "我们直接联系你到西班牙         "
       }, {
+        "image": "package.jpg",
         "title": "没有资质的要求",
         "content": "只需轻轻的一点, 你就能经营来自西班牙的各种品牌"
       }]
@@ -135,19 +139,19 @@ var HomeData = {
     "support": {
       "title": "专业, 正宗, 创新",
       "data": [{
-        "image": "",
+        "image": "expert-marcketing.jpg",
         "content": "我们为你带来真正的红酒",
         "title": "真正来自西班牙的品质, 欧洲的享受",
         "share": "",
         "like": ""
       }, {
-        "image": "",
+        "image": "expert-normal.jpg",
         "content": "我们为你打破贸易的壁垒",
         "title": "用平台解决一切繁琐的制度和障碍",
         "share": "",
         "like": ""
       }, {
-        "image": "",
+        "image": "expert-technology.jpg",
         "content": "我们用科技, 知识, 智慧, 创造红酒之路",
         "title": "用我们的知识,技术和态度打造新的贸易",
         "share": "",
