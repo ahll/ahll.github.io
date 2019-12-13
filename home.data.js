@@ -33,39 +33,39 @@ var HomeData = {
     "platform": {
       "title": "El camino más rápido y fiable al mercado China",
       "data": [{
-        "avatar": "",
+        "image": "online.jpg",
         "title": "No papeleos",
-        "name": "Todo online y automatizado                 "
+        "content": "Todo online y automatizado                 "
       }, {
-        "avatar": "",
+        "image": "translation.jpg",
         "title": "No traductores",
-        "name": "Hablamos por ti                            "
+        "content": "Hablamos por ti                            "
       }, {
-        "avatar": "",
+        "image": "intermediary.jpg",
         "title": "No intermediarios",
-        "name": "Te conectamos directamente a China         "
+        "content": "Te conectamos directamente a China         "
       }, {
-        "avatar": "",
+        "image": "package.jpg",
         "title": "No perdidas",
-        "name": "Te vigilamos todos tus productos hasta China"
+        "content": "Te vigilamos todos tus productos hasta China"
       }]
     },
     "support": {
       "title": "¡Conocimientos, Expertos y Tecnologías!",
       "data": [{
-        "image": "",
+        "image": "expert-marcketing.jpg",
         "content": "Te analizamos el mercado, te integramos al mercado china",
         "title": "Expertos en el mercado chino",
         "share": "",
         "like": ""
       }, {
-        "image": "",
+        "image": "expert-normal.jpg",
         "content": "Elimino las barreras del mercado, te sientes como en españa",
         "title": "Expertos en normas de comercio internacinal",
         "share": "",
         "like": ""
       }, {
-        "image": "",
+        "image": "expert-technology.jpg",
         "content": "Usamos tecnologías y nuestro talento, y simplicamos el camino al mercado china",
         "title": "Expertos en el tecnología",
         "share": "",
@@ -119,21 +119,17 @@ var HomeData = {
     "platform": {
       "title": "我们专业的平台",
       "data": [{
-        "avatar": "",
         "title": "无须繁琐的手续",
-        "name": "在线, 自动, 随叫随到                 "
+        "content": "在线, 自动, 随叫随到                 "
       }, {
-        "avatar": "",
         "title": "无须当心品质",
-        "name": "我们带来西班牙酒厂的直销                           "
+        "content": "我们带来西班牙酒厂的直销                           "
       }, {
-        "avatar": "",
         "title": "没有层层剥削",
-        "name": "我们直接联系你到西班牙         "
+        "content": "我们直接联系你到西班牙         "
       }, {
-        "avatar": "",
         "title": "没有资质的要求",
-        "name": "只需轻轻的一点, 你就能经营来自西班牙的各种品牌"
+        "content": "只需轻轻的一点, 你就能经营来自西班牙的各种品牌"
       }]
     },
     "support": {

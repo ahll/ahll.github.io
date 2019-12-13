@@ -50682,7 +50682,7 @@ exports["default"] = void 0;
 var RoutsText = {
   "es_ES": {
     "home": "TheWineRoad",
-    "provider": "Providor",
+    "provider": "Proveedor",
     "dealer": "Demander",
     "supply": "Suministro",
     "wholesale": "Por Mayor"

@@ -26,6 +26,11 @@
 
 .itemMedia {
    height: 200px; 
+   width: 300px; 
+}
+
+.itemContent {
+   height: 150px; 
 }
 
 .item:hover  { 

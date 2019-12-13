@@ -51,7 +51,9 @@ function MarcketCard(props) {
     className: "itemMedia",
     image: imageUrl + data.image,
     title: data.title
-  }), React.createElement(CardContent, null, React.createElement(Typography, {
+  }), React.createElement(CardContent, {
+    className: "itemContent"
+  }, React.createElement(Typography, {
     gutterBottom: true,
     variant: "headline",
     component: "h2"
@@ -79,23 +81,19 @@ function PlatformCard(props) {
   var data = props.data;
   return React.createElement("div", {
     className: "smallItem platform-card"
-  }, React.createElement(Card, null, React.createElement(CardHeader, {
-    avatar: React.createElement(Avatar, {
-      "aria-label": "Recipe",
-      src: data.avatar
-    }),
-    title: data.title,
-    subheader: data.profession
-  }), React.createElement(CardContent, null, React.createElement(Typography, {
+  }, React.createElement(Card, null, React.createElement(CardMedia, {
+    className: "itemMedia",
+    image: imageUrl + data.image,
+    title: data.title
+  }), React.createElement(CardContent, {
+    className: "itemContent"
+  }, React.createElement(Typography, {
     gutterBottom: true,
     variant: "headline",
     component: "h2"
-  }, data.name), React.createElement(Typography, {
+  }, data.title), React.createElement(Typography, {
     component: "p"
-  }, data.content)), React.createElement(CardActions, null, React.createElement(IconButton, {
-    href: "mailto:" + data.email,
-    alt: data.email
-  }))));
+  }, data.content)), React.createElement(CardActions, null)));
 }
 
 function Platform(props) {
@@ -116,12 +114,14 @@ function Platform(props) {
 function SupportCard(props) {
   var data = props.data;
   return React.createElement("div", {
-    className: "smallItem background-wine support-card"
+    className: "item background-wine support-card"
   }, React.createElement(Card, null, React.createElement(CardMedia, {
     className: "itemMedia",
     image: imageUrl + data.image,
     title: data.title
-  }), React.createElement(CardContent, null, React.createElement(Typography, {
+  }), React.createElement(CardContent, {
+    className: "itemContent"
+  }, React.createElement(Typography, {
     gutterBottom: true,
     variant: "headline",
     component: "h2"
@@ -167,7 +167,7 @@ function Contact(props) {
     width: "100%",
     height: "500px",
     frameBorder: "0",
-    src: "",
+    src: "https://www.google.com/maps/embed/v1/place?q=plaza%20museo%20cultura%20china%20%2C%20Madrid%2C%20Espa%C3%B1a&key=AIzaSyBLUievS93qpr4IBKpuq42p7E2T3pzM4cw",
     allowFullScreen: true
   })));
 }
