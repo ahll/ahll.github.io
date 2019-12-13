@@ -1,0 +1,100 @@
+@import "assets/css/wine-road.css";
+@import "assets/css/animate.css";
+@import "assets/css/card.css";
+@import "assets/css/flex.css";
+
+html, body{
+    background-color: #ffffff;
+    text-align: center;
+}
+section{
+	padding-top: 0.5%;
+}
+
+/*
+ showcase
+*/
+.showcase{
+  position: relative;
+  padding-top: 4%;
+  margin:0 0 0 0;
+  padding-bottom: 4%;
+}
+
+.showcase .text{
+	text-align:center;
+}
+
+.showcase .text .animateOne {
+   	font-size:20px;
+ 	-webkit-animation-duration: 8s;
+  	-webkit-animation-iteration-count: 1;
+  	animation-duration: 8s;
+  	animation-iteration-count: 1;
+}
+
+.showcase .text .animateTwo {
+   	font-size:20px;
+   	-webkit-animation-delay: 6s;
+ 	-webkit-animation-duration: 8s;
+  	-webkit-animation-iteration-count: 1;
+  	animation-delay: 6s;
+  	animation-duration: 8s;
+  	animation-iteration-count: 1;
+}
+/*4:3 of width*/
+.showcase img{
+	width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .showcase .video{
+        width:40%;
+        height:50%;
+        padding-bottom:30%;
+    }
+    
+    .showcase .video iframe{
+        position: absolute;
+        height:50%;
+        width:60%;
+        text-align:center;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .showcase .video{
+        width:0%;
+        height:50%;
+        padding-bottom:60%;
+    }
+    
+    .showcase .video iframe{
+        position: absolute;
+        height:50%;
+        width:100%;
+        text-align:center;
+    }
+}
+
+
+
+/*teach*/
+.teach-card{
+  height:50%;
+}
+
+.contact-info{
+   display: flex;
+   align-items: center;
+  justify-content: center;
+}
+
+.contact-info-item{
+   padding: 5px;
+}
+
+.footer{
+   padding-bottom: 1%;
+}

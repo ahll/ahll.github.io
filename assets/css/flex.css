@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.flex-root {
+    flexGrow: 1;
+}
+.flex {
+    width: 100%;
+    text-align: center;
+    flex: 1;
+}
