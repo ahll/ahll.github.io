@@ -63,7 +63,16 @@ section{
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
+    
+    .showcase{
+        position: relative;
+        padding-top: 20%;
+        margin:0 0 0 0;
+        padding-bottom: 4%;
+     }
+
+    
     .showcase .video{
         width:0%;
         height:50%;
