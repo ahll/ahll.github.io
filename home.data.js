@@ -93,7 +93,7 @@ var HomeData = {
     "title": "红酒之路",
     "showcase": {
       "title": "红酒之路 - 来自伊比利亚的奢华",
-      "content": "婚庆，聚会，在家， 生活的必须",
+      "content": "婚庆，聚会，居家，生活的必备",
       "button": "咨询批发"
     },
     "marcket": {
@@ -109,7 +109,7 @@ var HomeData = {
         "share": "",
         "image": "like-wine.jpg",
         "title": "我们喜欢红酒",
-        "content": "婚庆, 聚会, 家居, 红酒都是我们的好伙伴"
+        "content": "婚庆, 聚会, 居家, 红酒都是我们的好伙伴"
       }, {
         "like": "",
         "share": "",
