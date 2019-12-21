@@ -18,6 +18,14 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { if (!(Symbol.iterator in Object(arr) || Object.prototype.toString.call(arr) === "[object Arguments]")) { return; } var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 var text = function text() {
   return HomeData[Locale];
 };
@@ -96,6 +104,57 @@ function PlatformCard(props) {
   }, data.content)), React.createElement(CardActions, null)));
 }
 
+function getSteps() {
+  return text().platform.steps;
+}
+
+function getStepContent(step) {
+  return text().platform.stepsText[step];
+}
+
+function WineTravelSteps() {
+  var _React$useState = React.useState(1),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      activeStep = _React$useState2[0],
+      setActiveStep = _React$useState2[1];
+
+  var steps = getSteps();
+
+  var handleNext = function handleNext() {
+    setActiveStep(function (prevActiveStep) {
+      return prevActiveStep + 1;
+    });
+  };
+
+  var handleBack = function handleBack() {
+    setActiveStep(function (prevActiveStep) {
+      return prevActiveStep - 1;
+    });
+  };
+
+  var handleReset = function handleReset() {
+    setActiveStep(0);
+  };
+
+  return React.createElement("div", null, React.createElement(Stepper, {
+    alternativeLabel: true,
+    activeStep: activeStep
+  }, steps.map(function (label) {
+    return React.createElement(Step, {
+      key: label
+    }, React.createElement(StepLabel, null, label));
+  })), React.createElement("div", null, activeStep === steps.length ? React.createElement("div", null, React.createElement(Button, {
+    onClick: handleReset
+  }, "Reset")) : React.createElement("div", null, React.createElement(Typography, null, getStepContent(activeStep)), React.createElement("div", null, React.createElement(Button, {
+    disabled: activeStep === 0,
+    onClick: handleBack
+  }, "Back"), React.createElement(Button, {
+    variant: "contained",
+    color: "primary",
+    onClick: handleNext
+  }, activeStep === steps.length - 1 ? 'Finish' : 'Next')))));
+}
+
 function Platform(props) {
   var cards = text().platform.data.map(function (data, index) {
     return React.createElement(PlatformCard, {
@@ -107,6 +166,8 @@ function Platform(props) {
     id: "platform",
     className: "background-wine text-white"
   }, React.createElement("h1", null, text().platform.title), React.createElement("div", {
+    className: "wineTravelSteps"
+  }, React.createElement(WineTravelSteps, null)), React.createElement("div", {
     className: "itemList"
   }, cards));
 }

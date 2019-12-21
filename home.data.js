@@ -32,6 +32,8 @@ var HomeData = {
     },
     "platform": {
       "title": "El camino más rápido y fiable al mercado China",
+      "steps": ["Orden de compra", "Recogida en bodega", "Declaración de exportación", "Transporte internacional", "Cambio de pedidos", "Inspección de aduanas", "Evaluación y pago de impuestos", "Inspección y presentación", "Certificado de salude"],
+      "stepsText": ["Orden de compra", "Recogida en bodega", "Declaración de exportación", "Transporte internacional", "Cambio de pedidos", "Inspección de aduanas", "Evaluación y pago de impuestos", "Inspección y presentación", "Certificado de salude"],
       "data": [{
         "image": "online.jpg",
         "title": "No papeleos",
@@ -118,6 +120,8 @@ var HomeData = {
     },
     "platform": {
       "title": "我们专业的平台",
+      "steps": ["酒庄备货", "装货提货", "出口报关", "国际运输", "换单办单", "报检报关", "审价缴税", "查验送检", "出卫生证"],
+      "stepsText": ["酒庄备货", "装货提货", "出口报关", "国际运输", "换单办单", "报检报关", "审价缴税", "查验送检", "出卫生证"],
       "data": [{
         "image": "online.jpg",
         "title": "无须繁琐的手续",
