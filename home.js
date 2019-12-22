@@ -119,6 +119,7 @@ function WineTravelSteps() {
       setActiveStep = _React$useState2[1];
 
   var steps = getSteps();
+  var orientation = isMobile ? "vertical" : "horizontal";
 
   var handleNext = function handleNext() {
     setActiveStep(function (prevActiveStep) {
@@ -138,7 +139,8 @@ function WineTravelSteps() {
 
   return React.createElement("div", null, React.createElement(Stepper, {
     alternativeLabel: true,
-    activeStep: activeStep
+    activeStep: activeStep,
+    orientation: orientation
   }, steps.map(function (label) {
     return React.createElement(Step, {
       key: label
